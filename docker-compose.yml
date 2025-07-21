@@ -14,6 +14,6 @@ services:
       - TZ=America/New_York
     volumes:
       #- /dev/bus/usb:/dev/bus/usb         # for stream deck USB pass-through
-      - /mnt/data/docker/volumes/companion:/companion       # persistent config & modules
+      - /mnt/data/docker/volumes/companion:/config       # persistent config & modules
     privileged: true
     restart: unless-stopped
